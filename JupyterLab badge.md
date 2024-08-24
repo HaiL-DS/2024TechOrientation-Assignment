@@ -60,6 +60,20 @@ MaxPrimFact(600851475143)
  * Uniform
  * Chi Squared
 
+&nbsp;&nbsp;Generating 1000 random numbers from a standard normmal distribution:
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+np.random.normal(loc = 0, scale = 1, size = 1000)  # python uses `loc` as `mean` and `scale` as `standard deviation`
+plt.hist(collection, bins=50)
+plt.show()
+```
+![alt text](filename)
+
+
+
+
+
 ## 3. Visually Demonstrate (use histograms) to show that the Binomial and Normal distributions converge in the large *N* limit. Store the resulting histograms in your github repo. Make a mini-presentation using a markdown file in your github repo explaining the proof.
 
 
