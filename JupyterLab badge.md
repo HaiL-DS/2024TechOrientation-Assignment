@@ -54,11 +54,11 @@ MaxPrimFact(600851475143)
 **The result is:** &nbsp;&nbsp; `6857`
 
 ## 2. Use a random number generator to make histograms of popular probability distributions. Use the numpy and matplotlib packages. Choose THREE from the list below and store your resulting code in your github repo.
-    * Binomial
-    * Poisson
-    * Normal
-    * Uniform
-    * Chi Squared
+ * Binomial
+ * Poisson
+ * Normal
+ * Uniform
+ * Chi Squared
 
 ## 3. Visually Demonstrate (use histograms) to show that the Binomial and Normal distributions converge in the large *N* limit. Store the resulting histograms in your github repo. Make a mini-presentation using a markdown file in your github repo explaining the proof.
 
