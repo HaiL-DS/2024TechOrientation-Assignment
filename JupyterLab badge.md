@@ -76,7 +76,7 @@ collection2 = np.random.binomial(100, 0.25, 1000)
 plt.hist(collection2)
 plt.show()
 ```
-![Output]()
+![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_Binom.png)
 
 
 
