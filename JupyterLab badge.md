@@ -60,7 +60,7 @@ MaxPrimFact(600851475143)
  * Uniform
  * Chi Squared
 
-&nbsp;&nbsp;Generating 1000 random numbers from a standard normmal distribution:
+&nbsp;&nbsp; * Generating 1000 random numbers from a standard normmal distribution:
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -70,7 +70,13 @@ plt.show()
 ```
 ![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_stdNormal.png)
 
-
+&nbsp;&nbsp; * Generating 1000 random numbers from a binomial distribution with 10 number of trials and 25% probability of success:
+```python
+collection2 = np.random.binomial(100, 0.25, 1000)
+plt.hist(collection2)
+plt.show()
+```
+![Output]()
 
 
 
