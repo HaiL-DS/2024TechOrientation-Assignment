@@ -82,13 +82,13 @@ plt.show()
 &nbsp;&nbsp;It makes sense that the 1000 numbers drawn are centered at 25, which is the number of successes in 100 trials with 25% probability of success.  
 
 &nbsp;  
-&nbsp;&nbsp; **Generating 1000 random numbers from a Chi Squared distribution:**
+&nbsp;&nbsp; **Generating 1000 random numbers from a Chi Squared distribution with a degree of freedom of 19:**
 ```python
 collection3 = np.random.chisquare(19, size = 1000)
 plt.hist(collection3, bins=20)
 plt.show()
 ```
-![Output]()
+![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_Chi.png)
 
 
 
