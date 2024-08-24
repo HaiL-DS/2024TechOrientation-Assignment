@@ -60,7 +60,7 @@ MaxPrimFact(600851475143)
  * Uniform
  * Chi Squared
 
-&nbsp;&nbsp; * Generating 1000 random numbers from a standard normmal distribution:
+&nbsp;&nbsp; **Generating 1000 random numbers from a standard normmal distribution:**
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -70,13 +70,26 @@ plt.show()
 ```
 ![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_stdNormal.png)
 
-&nbsp;&nbsp; * Generating 1000 random numbers from a binomial distribution with 10 number of trials and 25% probability of success:
+&nbsp;  
+&nbsp;&nbsp; **Generating 1000 random numbers from a binomial distribution that has 100 trials with 25% probability of success:**
 ```python
-collection2 = np.random.binomial(100, 0.25, 1000)
-plt.hist(collection2)
+collection2 = np.random.binomial(100, 0.25, 1000)   # each collection represents the number of successes for 100 trials with a successful rate of 0.25 
+plt.hist(collection2)                               # and collect the number 1000 times
 plt.show()
 ```
 ![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_Binom.png)
+
+&nbsp;&nbsp;It makes sense that the 1000 numbers drawn are centered at 25, which is the number of successes in 100 trials with 25% probability of success.  
+
+&nbsp;  
+&nbsp;&nbsp; **Generating 1000 random numbers from a Chi Squared distribution:**
+```python
+collection3 = np.random.chisquare(19, size = 1000)
+plt.hist(collection3, bins=20)
+plt.show()
+```
+![Output]()
+
 
 
 
