@@ -2,13 +2,7 @@
 **Problem 1.** If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6, and 9. The sum of these multiples is 23. <br>Find the sum of all the multiples of 3 or 5 below 1000.
 
 ```R
-sum = 0
-for i in range(1000):
-    if i%3 == 0 or i%5 == 0:
-        sum += i
-    i +=1
 
-sum
 ```
 **The result is:** &nbsp;&nbsp; `233168`
 
@@ -18,15 +12,7 @@ $$1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \dots$$
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 ```R
-Fibo = [1, 2]
-sum = 0
-while Fibo[-1] <= 4000000:
-    Fibo.append(Fibo[-1]+Fibo[-2])
 
-for i in Fibo[:-1]:
-    if i%2 == 0:
-        sum += i
-sum
 ```
 **The result is:** &nbsp;&nbsp; `4613732`
 
@@ -35,21 +21,7 @@ sum
 What is the largest prime factor of the number $600851475143$?
 
 ```R
-import math
-def IsPrime(x):
-    for i in range(2, x):
-        if x%i == 0:
-            return False
-            break
-    return True
 
-def MaxPrimFact(x):
-    for i in range(int(math.sqrt(x))+1, 1, -1):
-        if x%i == 0 and IsPrime(i):
-            print(i)
-            break
-
-MaxPrimFact(600851475143)
 ```
 **The result is:** &nbsp;&nbsp; `6857`
 
@@ -62,20 +34,14 @@ MaxPrimFact(600851475143)
 
 &nbsp;&nbsp; **Generating 1000 random numbers from a standard normmal distribution:**
 ```R
-import numpy as np
-import matplotlib.pyplot as plt
-collection = np.random.normal(loc = 0, scale = 1, size = 1000)  # python uses `loc` as `mean` and `scale` as `standard deviation`
-plt.hist(collection, bins = 50)
-plt.show()
+
 ```
 ![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_stdNormal.png)
 
 &nbsp;  
 &nbsp;&nbsp; **Generating 1000 random numbers from a binomial distribution that has 100 trials with 25% probability of success:**
-```python
-collection2 = np.random.binomial(100, 0.25, 1000)   # each collection represents the number of successes for 100 trials with a successful rate of 0.25 
-plt.hist(collection2)                               # and collect the number 1000 times
-plt.show()
+```R
+
 ```
 ![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_Binom.png)
 
@@ -83,10 +49,8 @@ plt.show()
 
 &nbsp;  
 &nbsp;&nbsp; **Generating 1000 random numbers from a Chi Squared distribution with a degree of freedom of 19:**
-```python
-collection3 = np.random.chisquare(19, size = 1000)
-plt.hist(collection3, bins=20)
-plt.show()
+```R
+
 ```
 ![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_Chi.png)
 
