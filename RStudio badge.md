@@ -45,7 +45,31 @@ sum
 What is the largest prime factor of the number $600851475143$?
 
 ```R
+IsPrime <- function(x) 
+{
+  for (i in 2:(x - 1)) 
+  {
+    if (x %% i == 0)
+    {
+      return(FALSE)
+    }
+  }
+  return(TRUE)
+}
 
+MaxPrimFact <- function(x) 
+{
+  for (i in floor(sqrt(x)):2)
+  {
+    if (x %% i == 0 && IsPrime(i)) 
+    {
+      print(i)
+      break
+    }
+  }
+}
+
+MaxPrimFact(600851475143)
 ```
 **The result is:** &nbsp;&nbsp; `6857`
 
