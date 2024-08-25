@@ -90,7 +90,7 @@ df <- data.frame(collection)
 ggplot(df, aes(x=collection))+     #making histogram with the 1000 numbers randomly drawn from the standard normal distribution
   geom_histogram(binwidth = 0.25)
 ```
-![Output]()
+![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/R-sampling_from_stdNormal.png)
 
 &nbsp;  
 &nbsp;&nbsp; **Generating 1000 random numbers from a binomial distribution that has 100 trials with 25% probability of success:**
