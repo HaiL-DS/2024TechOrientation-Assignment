@@ -20,7 +20,23 @@ $$1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \dots$$
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 ```R
+Fibo <- c(1, 2)
+sum <- 0
 
+while (tail(Fibo, 1) <= 4000000)     #tail(Fibo, 1): get the last element of the Fibo vector
+{
+  Fibo <- c(Fibo, sum(tail(Fibo, 2)))     #append the sum of the last two elements of the Fibo vector to Fibo.
+}
+
+for (i in Fibo[-length(Fibo)])     #Fibo[-length(Fibo)]: get everything in the vector but/excluding the last one 
+{
+  if (i %% 2 == 0)
+  {
+    sum <- sum + i
+  }
+}
+
+sum
 ```
 **The result is:** &nbsp;&nbsp; `4613732`
 
