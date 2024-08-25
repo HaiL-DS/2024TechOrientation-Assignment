@@ -95,18 +95,26 @@ ggplot(df, aes(x=collection))+     #making histogram with the 1000 numbers rando
 &nbsp;  
 &nbsp;&nbsp; **Generating 1000 random numbers from a binomial distribution that has 100 trials with 25% probability of success:**
 ```R
+collection2 <- rbinom(1000, 100, 0.25)
+df2 <- data.frame(collection2)
 
+ggplot(df2, aes(x=collection2))+
+  geom_histogram()
 ```
-![Output]()
+![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/R-sampling_from_Binom.png)
 
 &nbsp;&nbsp;It makes sense that the 1000 numbers drawn are centered at 25, which is the number of successes in 100 trials with 25% probability of success.  
 
 &nbsp;  
-&nbsp;&nbsp; **Generating 1000 random numbers from a Chi Squared distribution with a degree of freedom of 19:**
+&nbsp;&nbsp; **Generating 1000 random numbers from a Chi-Squared distribution with a degree of freedom of 19:**
 ```R
+collection3 <- rchisq(1000, 19)
+df3 <- data.frame(collection3)
 
+ggplot(df3, aes(x=collection3))+
+  geom_histogram()
 ```
-![Output]()
+![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/R-sampling_from_Chi.png)
 
 
 
