@@ -82,7 +82,13 @@ MaxPrimFact(600851475143)
 
 &nbsp;&nbsp; **Generating 1000 random numbers from a standard normmal distribution:**
 ```R
+library(tidyverse)
 
+collection <- rnorm(1000)
+df <- data.frame(collection)
+
+ggplot(df, aes(x=collection))+     #making histogram with the 1000 numbers randomly drawn from the standard normal distribution
+  geom_histogram(binwidth = 0.25)
 ```
 ![Output]()
 
