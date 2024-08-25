@@ -84,14 +84,14 @@ MaxPrimFact(600851475143)
 ```R
 
 ```
-![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_stdNormal.png)
+![Output]()
 
 &nbsp;  
 &nbsp;&nbsp; **Generating 1000 random numbers from a binomial distribution that has 100 trials with 25% probability of success:**
 ```R
 
 ```
-![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_Binom.png)
+![Output]()
 
 &nbsp;&nbsp;It makes sense that the 1000 numbers drawn are centered at 25, which is the number of successes in 100 trials with 25% probability of success.  
 
@@ -100,7 +100,7 @@ MaxPrimFact(600851475143)
 ```R
 
 ```
-![Output](https://github.com/HaiL-DS/2024TechOrientation-Assignment/blob/main/Raw_Materials/Python-sampling_from_Chi.png)
+![Output]()
 
 
 
